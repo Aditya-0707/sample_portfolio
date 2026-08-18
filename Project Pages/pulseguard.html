@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseGuard — Automated System Sanity & API Health Monitor</title>
+  <meta name="description" content="PulseGuard: An end-to-end automated sanity validation engine ensuring system uptime, performance, and API reliability across production and UAT environments." />
+  <link rel="stylesheet" href="pulseguard.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========== Navigation ========== -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-back" id="nav-back">
+          <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Portfolio
+        </a>
+        <span class="nav-title">Case Study</span>
+      </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/HeroImages/pulseguard-hero.png" alt="Abstract system monitoring visualization" />
+      </div>
+      <div class="container">
+        <div class="hero-label reveal">Case Study</div>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">PulseGuard</span><br />
+          Automated System Sanity<br />& API Health Monitor
+        </h1>
+        <p class="hero-pitch reveal">
+          End-to-end automated sanity validation engine ensuring system uptime, performance, and API reliability across production and UAT environments.
+        </p>
+        <div class="hero-tags reveal">
+          <span class="tag">Python</span>
+          <span class="tag">Selenium</span>
+          <span class="tag">Google Apps Script</span>
+          <span class="tag">Microsoft Teams</span>
+          <span class="tag">Task Scheduler</span>
+          <span class="tag">System Monitoring</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Overview ========== -->
+    <section class="overview" id="overview">
+      <div class="container">
+        <span class="section-label reveal">Overview</span>
+        <h2 class="section-heading reveal">Continuous Health Monitoring, Zero Human Dependency</h2>
+        <p class="section-desc reveal">
+          PulseGuard is a backend-driven automation framework designed to eliminate manual sanity checks and ensure continuous system health monitoring across critical environments. The tool replicates real-user interactions and backend validations by combining Python automation, Selenium-based browser testing, and Google Apps Script (GAS) for API monitoring and reporting. It performs scheduled sanity checks across Production and UAT environments, validating system readiness, login performance, portal responsiveness, and API health — all without human intervention.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== Challenge ========== -->
+    <section class="challenge" id="challenge">
+      <div class="container">
+        <span class="section-label reveal">The Challenge</span>
+        <h2 class="section-heading reveal">Manual Checks, Maximum Risk</h2>
+        <p class="section-desc reveal">
+          Manual sanity checks were the only way to validate system health — creating a fragile, resource-intensive process that left critical gaps in monitoring coverage.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="pain-points reveal-stagger">
+            <div class="pain-point reveal">
+              <div class="pain-icon">⏱️</div>
+              <div class="pain-text">
+                <h4>Time-Bound Execution</h4>
+                <p>Sanity checks were scheduled every few hours, leaving significant gaps where system failures could go undetected.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">👤</div>
+              <div class="pain-text">
+                <h4>Resource-Heavy Process</h4>
+                <p>A dedicated team member was required for each sanity check cycle — pulling valuable resources away from development and incident response.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">⚠️</div>
+              <div class="pain-text">
+                <h4>Risk-Prone Coverage</h4>
+                <p>Checks were frequently missed during busy hours or emergencies, creating blind spots in system health monitoring when reliability mattered most.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-callout reveal">
+            <div class="stat-callout-value">15–20 min</div>
+            <div class="stat-callout-label">Per Manual Sanity Check</div>
+            <div class="stat-callout-sub">Multiple times daily, with a dedicated team member</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Solution ========== -->
+    <section class="solution" id="solution">
+      <div class="container">
+        <span class="section-label reveal">Key Features</span>
+        <h2 class="section-heading reveal">Complete Automation Suite</h2>
+        <p class="section-desc reveal">
+          PulseGuard replaces the entire manual sanity workflow with an intelligent, multi-layered automation engine that combines UI, API, and performance validation in a single flow.
+        </p>
+
+        <div class="solution-cards reveal-stagger">
+          <div class="solution-card reveal">
+            <div class="solution-card-number">01</div>
+            <div class="solution-card-icon">⏱️</div>
+            <h3>Automated Scheduled Execution</h3>
+            <p>Runs sanity checks autonomously, including every 3 hours for production environments.</p>
+            <ul>
+              <li>Multiple daily check cycles</li>
+              <li>Zero manual monitoring dependency</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">02</div>
+            <div class="solution-card-icon">🌐</div>
+            <h3>Selenium-Based UI Validation</h3>
+            <p>Simulates real user behavior to validate system availability and login performance.</p>
+            <ul>
+              <li>Server/container availability checks</li>
+              <li>Real user login flow simulation</li>
+              <li>Login success ≤ 5 second threshold</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">03</div>
+            <div class="solution-card-icon">📊</div>
+            <h3>Portal Performance Tracking</h3>
+            <p>Opens portals, pop-ups, and work items to capture and benchmark load times.</p>
+            <ul>
+              <li>Individual component load times</li>
+              <li>Automatic latency breach flagging</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">04</div>
+            <div class="solution-card-icon">🔗</div>
+            <h3>API Health Monitoring</h3>
+            <p>Validates all critical APIs through GAS with strict performance thresholds.</p>
+            <ul>
+              <li>Main API threshold: ≤ 3 seconds</li>
+              <li>Individual APIs: ≤ 1 second</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">05</div>
+            <div class="solution-card-icon">🚨</div>
+            <h3>Real-Time Alerts & Reporting</h3>
+            <p>Auto-generates health reports and sends instant notifications on threshold breaches.</p>
+            <ul>
+              <li>Concise health report generation</li>
+              <li>Microsoft Teams integration</li>
+              <li>Intelligent breach alerting</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">06</div>
+            <div class="solution-card-icon">📈</div>
+            <h3>Performance Benchmarking</h3>
+            <p>Tracks system responsiveness trends over time to identify degradation before failures occur.</p>
+            <ul>
+              <li>Historical trend analysis</li>
+              <li>Proactive degradation detection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Impact ========== -->
+    <section class="impact" id="impact" style="position: relative; overflow: hidden;">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <span class="section-label reveal">Impact</span>
+        <h2 class="section-heading reveal">Measurable Results</h2>
+        <p class="section-desc reveal">
+          PulseGuard transformed a fragile, manual process into a robust, always-on monitoring system.
+        </p>
+
+        <div class="impact-metrics reveal-stagger">
+          <div class="metric-card reveal">
+            <div class="metric-icon">⚡</div>
+            <div class="metric-value" data-target="90" data-prefix="~" data-suffix="%">~90%</div>
+            <div class="metric-label">Reduction in Manual Effort</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">⏳</div>
+            <div class="metric-value">2–3 min</div>
+            <div class="metric-label">Sanity Validation Time (from 15–20 min)</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🔁</div>
+            <div class="metric-value">24/7</div>
+            <div class="metric-label">Monitoring Without Human Dependency</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🚨</div>
+            <div class="metric-value" data-target="3" data-suffix="x">3x</div>
+            <div class="metric-label">Faster Incident Detection Speed</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📊</div>
+            <div class="metric-value">Consistent</div>
+            <div class="metric-label">API SLA Compliance Across Environments</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tech Stack ========== -->
+    <section class="tech-stack" id="tech-stack">
+      <div class="container">
+        <span class="section-label reveal">Technology Stack</span>
+        <h2 class="section-heading reveal">Built With</h2>
+
+        <div class="stack-grid reveal-stagger">
+          <div class="stack-item reveal">
+            <div class="stack-icon">🐍</div>
+            <div class="stack-info">
+              <h4>Python</h4>
+              <p>Automation Scripting</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🌐</div>
+            <div class="stack-info">
+              <h4>Selenium</h4>
+              <p>Browser-Based Validation</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">⚙️</div>
+            <div class="stack-info">
+              <h4>Google Apps Script</h4>
+              <p>API Execution & Reporting</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">💬</div>
+            <div class="stack-info">
+              <h4>Microsoft Teams</h4>
+              <p>Notifications via Webhooks</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">📅</div>
+            <div class="stack-info">
+              <h4>Task Scheduler / Cron</h4>
+              <p>Job Scheduling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== How It Works ========== -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">The Monitoring Flow</h2>
+        <p class="section-desc reveal">
+          PulseGuard orchestrates a multi-layered validation cycle that runs autonomously across environments — from triggering scheduled checks to delivering actionable reports.
+        </p>
+
+        <div class="flow-steps reveal-stagger">
+          <div class="flow-step reveal">
+            <div class="flow-step-number">01</div>
+            <div class="flow-step-content">
+              <h4>Scheduled Trigger</h4>
+              <p>Task Scheduler / Cron initiates the sanity check cycle at configured intervals — every 3 hours for production, with additional cycles for UAT environments.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">02</div>
+            <div class="flow-step-content">
+              <h4>UI Validation via Selenium</h4>
+              <p>Python + Selenium scripts launch browser sessions, verify server availability, simulate real user login flows, and validate that login completes within the ≤ 5 second threshold.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">03</div>
+            <div class="flow-step-content">
+              <h4>Portal & Component Testing</h4>
+              <p>The engine opens multiple portals, pop-ups, and work items — measuring individual load times for each component and flagging any latency breaches automatically.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">04</div>
+            <div class="flow-step-content">
+              <h4>API Health Check via GAS</h4>
+              <p>Google Apps Script validates all critical APIs against strict SLA thresholds — main APIs must respond within ≤ 3 seconds, individual APIs within ≤ 1 second.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">05</div>
+            <div class="flow-step-content">
+              <h4>Report Generation & Alerting</h4>
+              <p>Concise health reports are auto-generated and sent directly to Microsoft Teams. Any threshold breach triggers intelligent real-time alerts for immediate action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Why It Stands Out ========== -->
+    <section class="standout" id="standout">
+      <div class="container">
+        <span class="section-label reveal">Why It Stands Out</span>
+        <h2 class="section-heading reveal">Beyond Traditional Monitoring</h2>
+        <p class="section-desc reveal">
+          Unlike traditional monitoring tools that rely on simple health checks and log parsing, PulseGuard takes a fundamentally different approach to system health validation — mimicking real users, validating real flows, and delivering real intelligence.
+        </p>
+
+        <div class="standout-cards reveal-stagger">
+          <div class="standout-card reveal">
+            <div class="standout-card-icon">🔄</div>
+            <h3>Unified Validation Layer</h3>
+            <p>Combines UI + API + Performance validation in a single automated flow — eliminating the need for fragmented, disconnected monitoring tools.</p>
+            <ul>
+              <li>Browser-level UI checks alongside API validation</li>
+              <li>Performance benchmarking within the same cycle</li>
+              <li>Single execution covers all validation layers</li>
+            </ul>
+          </div>
+          <div class="standout-card reveal">
+            <div class="standout-card-icon">👤</div>
+            <h3>Real User Behavior Simulation</h3>
+            <p>Uses Selenium to mimic actual user interactions — login flows, portal navigation, and work item access — instead of relying on basic ping or synthetic health checks.</p>
+            <ul>
+              <li>Catches UI-level failures invisible to API monitors</li>
+              <li>Validates the complete user journey end-to-end</li>
+              <li>Detects rendering and session-level issues</li>
+            </ul>
+          </div>
+          <div class="standout-card reveal">
+            <div class="standout-card-icon">💡</div>
+            <h3>Actionable Intelligence</h3>
+            <p>Delivers structured, human-readable health reports with clear pass/fail indicators and performance benchmarks — not raw log dumps that require manual interpretation.</p>
+            <ul>
+              <li>Threshold-based intelligent alerting</li>
+              <li>Direct Microsoft Teams notifications</li>
+              <li>Historical trend tracking for degradation signals</li>
+            </ul>
+          </div>
+          <div class="standout-card reveal">
+            <div class="standout-card-icon">🧩</div>
+            <h3>Lightweight & Customizable</h3>
+            <p>Works as a lightweight, fully customizable in-house monitoring system — no expensive third-party observability platforms or complex infrastructure required.</p>
+            <ul>
+              <li>Built with accessible, open-source tools</li>
+              <li>Easily adaptable to new environments and APIs</li>
+              <li>Runs on standard infrastructure with minimal overhead</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-divider"></div>
+                <div class="footer-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+          <a href="ticketsense.html" class="footer-back" style="margin-bottom: 0;">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Previous
+          </a>
+          <a href="../index.html" class="footer-back" style="margin-bottom: 0; opacity: 0.7; font-size: 14px;">
+            Portfolio
+          </a>
+          <a href="calcinsight.html" class="footer-back" style="margin-bottom: 0; flex-direction: row-reverse;">
+            <svg viewBox="0 0 24 24" style="margin-right: 0; margin-left: 12px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Next
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Aditya — PulseGuard Case Study</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="pulseguard.js"></script>
+<script src="../global-cursor.js"></script>
+</body>
+</html>

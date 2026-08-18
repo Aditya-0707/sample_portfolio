@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRMS Request Validator — Pre-API Analysis Tool</title>
+  <meta name="description" content="A web-based solution for pre-validating complex BRMS JSON requests to enable early error detection before API execution." />
+  <link rel="stylesheet" href="preapi-validation.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========== Navigation ========== -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-back" id="nav-back">
+          <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Portfolio
+        </a>
+        <span class="nav-title">Case Study</span>
+      </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/HeroImages/preapi-hero.svg" alt="Abstract pre-validation JSON analysis visualization" />
+      </div>
+      <div class="container">
+        <div class="hero-label reveal">Case Study</div>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">BRMS Request Validator</span><br />
+          Pre-API Analysis Tool
+        </h1>
+        <p class="hero-pitch reveal">
+          A web-based solution designed to perform pre-validation of complex BRMS JSON requests, enabling early detection of errors before API execution and ensuring consistency across deployments.<br/><br/>
+          <em>Enabled proactive validation of business rules and JSON structures, significantly improving system reliability during both operations and releases.</em>
+        </p>
+        <div class="hero-tags reveal">
+          <span class="tag">Business Analysis</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Google Apps Script</span>
+          <span class="tag">BRMS</span>
+          <span class="tag">JSON Validation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Problem vs Solution ========== -->
+    <section class="prob-sol" id="prob-sol">
+      <div class="container">
+        <span class="section-label reveal">The Core Challenge</span>
+        <h2 class="section-heading reveal">Post-API Detection Failures</h2>
+        
+        <div class="prob-sol-grid reveal-stagger">
+          <div class="prob-box reveal">
+            <div class="box-title">🚨 The Problem</div>
+            <div class="box-content">
+              <p>In a complex BRMS-driven insurance system (500+ validation rules), JSON-based API requests were directly sent to the system for validation.</p>
+              <ul class="box-list">
+                <li>Errors detected only after API execution</li>
+                <li>High failed requests increased system load & cost</li>
+                <li>L1 teams struggled with slow troubleshooting</li>
+                <li>Deployments often broke JSON structures</li>
+                <li>No standardized way to pre-validate payloads</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="sol-box reveal">
+            <div class="box-title">💡 The Solution</div>
+            <div class="box-content">
+              <p>Proposed and implemented a pre-analysis interface allowing users to validate large JSON requests before they ever hit the API.</p>
+              <ul class="box-list">
+                <li>Instant pre-validation across 500+ rule conditions</li>
+                <li>Errors & missing values highlighted immediately</li>
+                <li>JSON structures verified before deployments</li>
+                <li>Only valid, clean requests are sent to the API</li>
+                <li>Drastic reduction in unnecessary API calls</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Workflow Transformation ========== -->
+    <section class="workflow" id="workflow">
+      <div class="container">
+        <span class="section-label reveal">Transformation</span>
+        <h2 class="section-heading reveal">Before vs After Workflow</h2>
+        <p class="section-desc reveal">
+          Shifting validation left — moving from a reactive, post-API failure model to a proactive, pre-API analysis model.
+        </p>
+
+        <div class="workflow-container reveal-stagger">
+          
+          <!-- Before -->
+          <div class="workflow-card wf-before reveal">
+            <h3>⚠️ Existing Workflow (Reactive)</h3>
+            <div class="wf-steps">
+              <div class="wf-step">
+                <div class="wf-icon">1</div>
+                <div class="wf-text">User sends untested JSON request</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">2</div>
+                <div class="wf-text">Costly API call triggered immediately</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">3</div>
+                <div class="wf-text">System processes 500+ rule checks</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">4</div>
+                <div class="wf-text">Error returned after processing delay</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">5</div>
+                <div class="wf-text">L1 team manually analyzes the failure response</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- After -->
+          <div class="workflow-card wf-after reveal">
+            <h3>✅ New Workflow (Proactive)</h3>
+            <div class="wf-steps">
+              <div class="wf-step">
+                <div class="wf-icon">1</div>
+                <div class="wf-text">User pastes JSON into validation interface</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">2</div>
+                <div class="wf-text">Pre-validation runs across all rule conditions instantly</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">3</div>
+                <div class="wf-text">Errors & mismatches highlighted before API call</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">4</div>
+                <div class="wf-text">JSON structure verified for deployment integrity</div>
+              </div>
+              <div class="wf-step">
+                <div class="wf-icon">5</div>
+                <div class="wf-text">Only 100% valid requests are sent to the live API</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Impact ========== -->
+    <section class="impact" id="impact" style="position: relative; overflow: hidden;">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <span class="section-label reveal">Impact</span>
+        <h2 class="section-heading reveal">Measurable Results</h2>
+
+        <div class="impact-metrics reveal-stagger">
+          <div class="metric-card reveal">
+            <div class="metric-icon">⬇️</div>
+            <div class="metric-value" data-target="80" data-prefix="~" data-suffix="%">~60–80%</div>
+            <div class="metric-label">Reduction in Unnecessary API Calls</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">⚡</div>
+            <div class="metric-value" data-target="50" data-prefix="~" data-suffix="%+">~50%+</div>
+            <div class="metric-label">Improvement in L1 Debugging Time</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🛑</div>
+            <div class="metric-value">Minimized</div>
+            <div class="metric-label">Production Issues During Deployments</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📉</div>
+            <div class="metric-value">Reduced</div>
+            <div class="metric-label">System Load & Operational Overhead</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Details (Key Insight & Role) ========== -->
+    <section class="details-section" id="details">
+      <div class="container">
+        <div class="details-grid">
+          
+          <!-- Key Insight -->
+          <div class="insight-box reveal">
+            <h3>Key Insight</h3>
+            <p>
+              "Shifting validation from post-API to pre-API significantly improved system efficiency, reduced risk, and enhanced troubleshooting speed."
+            </p>
+          </div>
+
+          <!-- My Role (BA Lens) -->
+          <div class="contributions reveal">
+            <span class="section-label">My Role</span>
+            <h2 class="section-heading">Business Analyst Lens</h2>
+            <ul class="contributions-list">
+              <li>Identified inefficiencies in the existing validation workflow and proposed pre-validation as a strategic solution.</li>
+              <li>Defined business rules and complex validation logic encompassing 500+ checks.</li>
+              <li>Bridged the gap between business stakeholders and technical developers to ensure smooth implementation.</li>
+              <li>Ensured the final solution supported both daily operations and critical release cycles seamlessly.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tech Stack ========== -->
+    <section class="tech-stack" id="tech-stack">
+      <div class="container">
+        <span class="section-label reveal">Technology Stack</span>
+        <h2 class="section-heading reveal">Tools & Technologies</h2>
+
+        <div class="stack-grid reveal-stagger">
+          <div class="stack-item reveal">
+            <div class="stack-icon">📋</div>
+            <div class="stack-info">
+              <h4>Process Mapping</h4>
+              <p>Requirement Analysis</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🗄️</div>
+            <div class="stack-info">
+              <h4>Google Sheets</h4>
+              <p>Data Processing Logic</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">⚙️</div>
+            <div class="stack-info">
+              <h4>Google Apps Script</h4>
+              <p>Automation Support</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🧠</div>
+            <div class="stack-info">
+              <h4>BRMS</h4>
+              <p>Business Rule Management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-divider"></div>
+                <div class="footer-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+          <a href="flagsight.html" class="footer-back" style="margin-bottom: 0;">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Previous
+          </a>
+          <a href="../index.html" class="footer-back" style="margin-bottom: 0; opacity: 0.7; font-size: 14px;">
+            Portfolio
+          </a>
+          <a href="apipulse.html" class="footer-back" style="margin-bottom: 0; flex-direction: row-reverse;">
+            <svg viewBox="0 0 24 24" style="margin-right: 0; margin-left: 12px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Next
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Aditya — Pre-API Validation Engine Case Study</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="preapi-validation.js"></script>
+<script src="../global-cursor.js"></script>
+</body>
+</html>

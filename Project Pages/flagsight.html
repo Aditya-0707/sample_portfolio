@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlagSight — Automated API Flag Validation & Audit Engine</title>
+  <meta name="description" content="FlagSight: Automated validation of critical insurance API flags across 600+ production cases, reducing manual effort by 95% and generating instant audit-ready reports." />
+  <link rel="stylesheet" href="flagsight.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========== Navigation ========== -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-back" id="nav-back">
+          <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Portfolio
+        </a>
+        <span class="nav-title">Case Study</span>
+      </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/HeroImages/flagsight-hero.svg" alt="Abstract API flag validation visualization" />
+      </div>
+      <div class="container">
+        <div class="hero-label reveal">Case Study</div>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">FlagSight</span><br />
+          Automated API Flag Validation<br />& Audit Engine
+        </h1>
+        <p class="hero-pitch reveal">
+          "Turning hours of manual API validation into minutes of intelligent automation."<br/><br/>
+          Automated validation of critical insurance API flags across 600+ production cases, reducing manual effort by 95% and generating instant audit-ready reports.
+        </p>
+        <div class="hero-tags reveal">
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">Google Apps Script</span>
+          <span class="tag">Batch Processing</span>
+          <span class="tag">JSON Parsing</span>
+          <span class="tag">Automation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Challenge ========== -->
+    <section class="challenge" id="challenge">
+      <div class="container">
+        <span class="section-label reveal">The Challenge</span>
+        <h2 class="section-heading reveal">Critical Flags, Manual Bottlenecks</h2>
+        <p class="section-desc reveal">
+          In the insurance new business workflow, multiple dependent APIs (8+ services) are responsible for generating critical decision flags (CRC/PIVC). Due to intermittent system issues, incorrect flags were being triggered across hundreds of production cases.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="pain-points reveal-stagger">
+            <div class="pain-point reveal">
+              <div class="pain-icon">⚠️</div>
+              <div class="pain-text">
+                <h4>600+ Urgent Cases</h4>
+                <p>A massive backlog of production cases required urgent validation to ensure business continuity and compliance.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">🖥️</div>
+              <div class="pain-text">
+                <h4>Tedious Manual Process</h4>
+                <p>Validation required logging into remote servers, querying databases, extracting JSON responses, and manually cross-checking flags.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">❌</div>
+              <div class="pain-text">
+                <h4>Error-Prone & Unscalable</h4>
+                <p>The manual process took ~1 minute per case. For 600+ cases, that meant ~10+ hours of continuous, exhausting, and error-prone human effort per cycle.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-callout reveal">
+            <div class="stat-callout-value">10+ hrs</div>
+            <div class="stat-callout-label">Per Validation Cycle</div>
+            <div class="stat-callout-sub">1 minute per case × 600+ cases manually checked</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Solution ========== -->
+    <section class="solution" id="solution">
+      <div class="container">
+        <span class="section-label reveal">Key Capabilities</span>
+        <h2 class="section-heading reveal">Intelligent Validation Pipeline</h2>
+        <p class="section-desc reveal">
+          I designed and developed a web-based automation tool that completely streamlined the entire validation pipeline, moving from manual server checks to bulk UI processing.
+        </p>
+
+        <div class="solution-cards reveal-stagger">
+          <div class="solution-card reveal">
+            <div class="solution-card-icon">🖱️</div>
+            <h3>Bulk UI Input</h3>
+            <p>Input hundreds of case IDs directly via a clean, web-based UI rather than interacting with raw database queries.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-icon">🗄️</div>
+            <h3>Automated Extraction</h3>
+            <p>Automated database connection and seamless data extraction across the required dependent API services.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-icon">🧠</div>
+            <h3>Intelligent Parsing</h3>
+            <p>Automatic parsing of complex API response JSONs to locate and isolate the critical decision flags.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-icon">✅</div>
+            <h3>Logic Validation</h3>
+            <p>Validation of CRC/PIVC flags based on predefined business logic, flagging any inconsistencies immediately.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-icon">⚡</div>
+            <h3>Batch Processing</h3>
+            <p>Built to handle bulk processing of 600+ production cases simultaneously without timeouts or memory issues.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-icon">📄</div>
+            <h3>Audit Reports</h3>
+            <p>Auto-generation of structured, client-ready reports detailing the validation outcomes for every processed case.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Before vs After ========== -->
+    <section class="comparison" id="comparison">
+      <div class="container">
+        <span class="section-label reveal">Transformation</span>
+        <h2 class="section-heading reveal">Before vs After</h2>
+        
+        <div class="comparison-table-wrap reveal">
+          <div class="comparison-grid">
+            <!-- Header -->
+            <div class="comp-header">Aspect</div>
+            <div class="comp-header comp-before-header">Before (Legacy)</div>
+            <div class="comp-header comp-after-header comp-after">After (FlagSight)</div>
+            
+            <!-- Rows -->
+            <div class="comp-row">
+              <div class="comp-cell comp-aspect">Process</div>
+              <div class="comp-cell comp-before">Fully manual</div>
+              <div class="comp-cell comp-after">Fully automated</div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-cell comp-aspect">Time per case</div>
+              <div class="comp-cell comp-before">~1 minute</div>
+              <div class="comp-cell comp-after">Few seconds (bulk)</div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-cell comp-aspect">Total effort (600 cases)</div>
+              <div class="comp-cell comp-before">~10+ hours</div>
+              <div class="comp-cell comp-after">< 30 minutes</div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-cell comp-aspect">Accuracy</div>
+              <div class="comp-cell comp-before">Error-prone</div>
+              <div class="comp-cell comp-after">High consistency</div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-cell comp-aspect">Reporting</div>
+              <div class="comp-cell comp-before">Manual compilation</div>
+              <div class="comp-cell comp-after">Auto-generated</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Impact ========== -->
+    <section class="impact" id="impact" style="position: relative; overflow: hidden;">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <span class="section-label reveal">Impact</span>
+        <h2 class="section-heading reveal">Measurable Results</h2>
+        <p class="section-desc reveal">
+          FlagSight didn't just speed up a process — it eliminated human error from a critical business decision workflow.
+        </p>
+
+        <div class="impact-metrics reveal-stagger">
+          <div class="metric-card reveal">
+            <div class="metric-icon">⏳</div>
+            <div class="metric-value" data-target="500" data-prefix="+" data-suffix="">+500</div>
+            <div class="metric-label">Man-Hours Saved Across Validation Cycles</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">⚡</div>
+            <div class="metric-value" data-target="95" data-suffix="%">95%</div>
+            <div class="metric-label">Reduction in Manual Effort</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📊</div>
+            <div class="metric-value">Real-Time</div>
+            <div class="metric-label">Validation of Production Cases</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📄</div>
+            <div class="metric-value">Instant</div>
+            <div class="metric-label">Client-Ready Audit Reports Delivered</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🔍</div>
+            <div class="metric-value">Zero</div>
+            <div class="metric-label">Human Error in Critical Decision Flags</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Details (Highlights & Tech Stack) ========== -->
+    <section class="details-section" id="details">
+      <div class="container">
+        <div class="details-grid">
+          
+          <!-- Key Highlights -->
+          <div class="highlights reveal">
+            <span class="section-label">Key Highlights</span>
+            <h2 class="section-heading">Built Under Pressure</h2>
+            <ul class="highlights-list">
+              <li>Built for live production debugging, not just testing</li>
+              <li>Handled complex multi-API dependency validation</li>
+              <li>Designed and executed under time-critical business pressure</li>
+              <li>Directly influenced customer-impacting decisions</li>
+            </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="stack reveal">
+            <span class="section-label">Technology Stack</span>
+            <h2 class="section-heading">Built With</h2>
+            <div class="stack-grid">
+              <div class="stack-item">
+                <div class="stack-icon">💻</div>
+                <div class="stack-info">
+                  <h4>Frontend UI</h4>
+                  <p>Web-based UI (HTML/CSS/JS)</p>
+                </div>
+              </div>
+              <div class="stack-item">
+                <div class="stack-icon">⚙️</div>
+                <div class="stack-info">
+                  <h4>Backend Logic</h4>
+                  <p>Google Apps Script (GAS)</p>
+                </div>
+              </div>
+              <div class="stack-item">
+                <div class="stack-icon">🗄️</div>
+                <div class="stack-info">
+                  <h4>Data Layer</h4>
+                  <p>Google Sheets + DB Integration</p>
+                </div>
+              </div>
+              <div class="stack-item">
+                <div class="stack-icon">🔄</div>
+                <div class="stack-info">
+                  <h4>Automation</h4>
+                  <p>Server-side execution & batch processing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-divider"></div>
+                <div class="footer-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+          <a href="apipulse.html" class="footer-back" style="margin-bottom: 0;">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Previous
+          </a>
+          <a href="../index.html" class="footer-back" style="margin-bottom: 0; opacity: 0.7; font-size: 14px;">
+            Portfolio
+          </a>
+          <a href="preapi-validation.html" class="footer-back" style="margin-bottom: 0; flex-direction: row-reverse;">
+            <svg viewBox="0 0 24 24" style="margin-right: 0; margin-left: 12px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Next
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Aditya — FlagSight Case Study</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="flagsight.js"></script>
+<script src="../global-cursor.js"></script>
+</body>
+</html>

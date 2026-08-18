@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doc2DB Pipeline — Document-to-Database Automation Platform</title>
+  <meta name="description" content="Doc2DB Pipeline: A web-based automation platform that transforms unstructured client requirement documents into deployment-ready database outputs, reducing processing time from ~6 hours to under 1 minute." />
+  <link rel="stylesheet" href="doc2db.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========== Navigation ========== -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-back" id="nav-back">
+          <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Portfolio
+        </a>
+        <span class="nav-title">Case Study</span>
+      </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/HeroImages/doc2db-hero.svg" alt="Abstract data pipeline visualization" />
+      </div>
+      <div class="container">
+        <div class="hero-label reveal">Case Study</div>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">Doc2DB Pipeline</span><br />
+          Document-to-Database<br />Automation Platform
+        </h1>
+        <p class="hero-pitch reveal">
+          A web-based automation platform that transforms unstructured client requirement documents into deployment-ready database outputs — reducing a 6-hour workflow to under 1 minute.
+        </p>
+        <div class="hero-tags reveal">
+          <span class="tag">HTML / CSS / JavaScript</span>
+          <span class="tag">Google Apps Script</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Data Transformation</span>
+          <span class="tag">Document Automation</span>
+          <span class="tag">Schema Generation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Overview ========== -->
+    <section class="overview" id="overview">
+      <div class="container">
+        <span class="section-label reveal">Overview</span>
+        <h2 class="section-heading reveal">Transforming Documents to Deployment-Ready Databases</h2>
+        <p class="section-desc reveal">
+          Doc2DB Pipeline is a web-based automation platform developed to transform unstructured client requirement documents into deployment-ready database outputs. The system intelligently extracts and processes document-based tabular data, applies client-specific transformation logic, and automatically generates database schemas along with SQL insert scripts. Designed to eliminate repetitive manual effort, the platform converts a time-intensive workflow into a fast, scalable, and deployment-ready process.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== Challenge ========== -->
+    <section class="challenge" id="challenge">
+      <div class="container">
+        <span class="section-label reveal">The Challenge</span>
+        <h2 class="section-heading reveal">Manual Work, Massive Delays</h2>
+        <p class="section-desc reveal">
+          Client requirements were received in DOCX files containing unstructured tables, grids, and inconsistent formatting patterns. Since the data lacked a standardized structure, preparing it for deployment involved several manual steps.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="pain-points reveal-stagger">
+            <div class="pain-point reveal">
+              <div class="pain-icon">📄</div>
+              <div class="pain-text">
+                <h4>Manual Data Extraction</h4>
+                <p>Extracting and copying data from Word documents required tedious manual effort with no automation in place.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">📊</div>
+              <div class="pain-text">
+                <h4>Excel Processing Overhead</h4>
+                <p>Processing and restructuring tables in Excel added layers of manual transformation before any data was usable.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">🔄</div>
+              <div class="pain-text">
+                <h4>Matrix-to-Linear Conversion</h4>
+                <p>Converting matrix-based row-column tables into linear datasets required multiple formatting and transformation operations.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">🗄️</div>
+              <div class="pain-text">
+                <h4>Manual SQL & Schema Creation</h4>
+                <p>Manually creating database tables and SQL insert scripts introduced risk of inconsistencies and deployment delays.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-callout reveal">
+            <div class="stat-callout-value" data-count="6">5–6 hrs</div>
+            <div class="stat-callout-label">Per Document Processing Time</div>
+            <div class="stat-callout-sub">Manual effort, inconsistency risk, and deployment delays</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Solution ========== -->
+    <section class="solution" id="solution">
+      <div class="container">
+        <span class="section-label reveal">The Solution</span>
+        <h2 class="section-heading reveal">End-to-End Automation, Zero Manual Steps</h2>
+        <p class="section-desc reveal">
+          A web-based UI automation tool was developed that enables users to simply paste content directly from client Word documents into the application. The system then automatically handles the entire pipeline.
+        </p>
+
+        <div class="solution-cards reveal-stagger">
+          <div class="solution-card reveal">
+            <div class="solution-card-number">01</div>
+            <div class="solution-card-icon">📑</div>
+            <h3>Automated Table Extraction</h3>
+            <p>Detects and extracts tables sequentially from unstructured DOCX content — no manual copying required.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">02</div>
+            <div class="solution-card-icon">🔀</div>
+            <h3>Matrix-to-Linear Transformation</h3>
+            <p>Converts unstructured matrix-style tables into structured linear formats ready for downstream processing.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">03</div>
+            <div class="solution-card-icon">⚙️</div>
+            <h3>Rule-Based Formatting Engine</h3>
+            <p>Applies predefined transformation and formatting rules trained on client document patterns to standardize data.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">04</div>
+            <div class="solution-card-icon">🗃️</div>
+            <h3>Dynamic DB Table Generation</h3>
+            <p>Generates database table schemas automatically based on the transformed and standardized data.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">05</div>
+            <div class="solution-card-icon">💾</div>
+            <h3>Automated SQL Insert Scripts</h3>
+            <p>Creates SQL insert scripts for immediate deployment use — eliminating manual script writing entirely.</p>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">06</div>
+            <div class="solution-card-icon">🌐</div>
+            <h3>Web-Based UI Interface</h3>
+            <p>Simplified interaction through a clean web interface for faster processing and reduced dependency on technical expertise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Pipeline Visualization ========== -->
+    <section class="pipeline" id="pipeline">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">The Automated Pipeline</h2>
+        <p class="section-desc reveal">
+          From raw document input to deployment-ready SQL — the entire transformation happens automatically.
+        </p>
+
+        <div class="pipeline-flow reveal">
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon active">📄</div>
+            <div class="pipeline-step-label">DOCX Input</div>
+            <div class="pipeline-step-sub">Paste content</div>
+          </div>
+
+          <div class="pipeline-arrow">
+            <div class="pipeline-arrow-line"></div>
+          </div>
+
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon active">🔍</div>
+            <div class="pipeline-step-label">Data Extraction</div>
+            <div class="pipeline-step-sub">Table detection</div>
+          </div>
+
+          <div class="pipeline-arrow">
+            <div class="pipeline-arrow-line"></div>
+          </div>
+
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon active">🔄</div>
+            <div class="pipeline-step-label">Transformation</div>
+            <div class="pipeline-step-sub">Matrix → Linear</div>
+          </div>
+
+          <div class="pipeline-arrow">
+            <div class="pipeline-arrow-line"></div>
+          </div>
+
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon active">⚙️</div>
+            <div class="pipeline-step-label">Formatting</div>
+            <div class="pipeline-step-sub">Rule engine</div>
+          </div>
+
+          <div class="pipeline-arrow">
+            <div class="pipeline-arrow-line"></div>
+          </div>
+
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon active">🗃️</div>
+            <div class="pipeline-step-label">Schema Gen</div>
+            <div class="pipeline-step-sub">DB tables</div>
+          </div>
+
+          <div class="pipeline-arrow">
+            <div class="pipeline-arrow-line"></div>
+          </div>
+
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon active">💾</div>
+            <div class="pipeline-step-label">SQL Scripts</div>
+            <div class="pipeline-step-sub">Deploy ready</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Impact ========== -->
+    <section class="impact" id="impact" style="position: relative; overflow: hidden;">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <span class="section-label reveal">Impact</span>
+        <h2 class="section-heading reveal">Transformative Results</h2>
+        <p class="section-desc reveal">
+          Doc2DB Pipeline redefined a resource-intensive workflow, delivering massive gains in speed, accuracy, and scalability.
+        </p>
+
+        <div class="impact-metrics reveal-stagger">
+          <div class="metric-card reveal">
+            <div class="metric-icon">⚡</div>
+            <div class="metric-value" data-target="1" data-prefix="< " data-suffix=" min">< 1 min</div>
+            <div class="metric-label">Processing Time Per Document</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📉</div>
+            <div class="metric-value" data-target="99" data-prefix="~" data-suffix="%">~99%</div>
+            <div class="metric-label">Reduction in Manual Effort</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🚀</div>
+            <div class="metric-value">Faster</div>
+            <div class="metric-label">Deployment Readiness & Implementation</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🎯</div>
+            <div class="metric-value">Precise</div>
+            <div class="metric-label">Eliminated Manual Restructuring Errors</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🔄</div>
+            <div class="metric-value">Scalable</div>
+            <div class="metric-label">High-Volume Document Processing</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">💼</div>
+            <div class="metric-value">Optimized</div>
+            <div class="metric-label">Previously Resource-Intensive Workflow</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tech Stack ========== -->
+    <section class="tech-stack" id="tech-stack">
+      <div class="container">
+        <span class="section-label reveal">Technology Stack</span>
+        <h2 class="section-heading reveal">Built With</h2>
+
+        <div class="stack-grid reveal-stagger">
+          <div class="stack-item reveal">
+            <div class="stack-icon">🌐</div>
+            <div class="stack-info">
+              <h4>HTML, CSS & JavaScript</h4>
+              <p>Frontend</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">⚙️</div>
+            <div class="stack-info">
+              <h4>Google Apps Script</h4>
+              <p>Backend Automation</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🗄️</div>
+            <div class="stack-info">
+              <h4>SQL</h4>
+              <p>Database</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🔧</div>
+            <div class="stack-info">
+              <h4>Custom Transformation Logic</h4>
+              <p>Data Processing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Workflow ========== -->
+    <section class="workflow" id="workflow">
+      <div class="container">
+        <span class="section-label reveal">End-to-End Workflow</span>
+        <h2 class="section-heading reveal">Complete Data Journey</h2>
+
+        <div class="workflow-path reveal">
+          <div class="workflow-node">
+            <span class="workflow-node-icon">📄</span> DOCX
+          </div>
+          <span class="workflow-sep">→</span>
+          <div class="workflow-node">
+            <span class="workflow-node-icon">🔍</span> Data Extraction
+          </div>
+          <span class="workflow-sep">→</span>
+          <div class="workflow-node">
+            <span class="workflow-node-icon">🔄</span> Table Transformation
+          </div>
+          <span class="workflow-sep">→</span>
+          <div class="workflow-node">
+            <span class="workflow-node-icon">🗃️</span> DB Schema Generation
+          </div>
+          <span class="workflow-sep">→</span>
+          <div class="workflow-node">
+            <span class="workflow-node-icon">💾</span> SQL Insert Scripts
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-divider"></div>
+                <div class="footer-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+          <a href="calcinsight.html" class="footer-back" style="margin-bottom: 0;">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Previous
+          </a>
+          <a href="../index.html" class="footer-back" style="margin-bottom: 0; opacity: 0.7; font-size: 14px;">
+            Portfolio
+          </a>
+          <a href="ticketsense.html" class="footer-back" style="margin-bottom: 0; flex-direction: row-reverse;">
+            <svg viewBox="0 0 24 24" style="margin-right: 0; margin-left: 12px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Next
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Aditya — Doc2DB Pipeline Case Study</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="doc2db.js"></script>
+<script src="../global-cursor.js"></script>
+</body>
+</html>

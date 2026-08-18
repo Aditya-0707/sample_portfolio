@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Pulse — Real-Time Monitoring & Failure Intelligence System</title>
+  <meta name="description" content="API Pulse: A web-based monitoring and analytics platform designed to proactively detect performance bottlenecks, isolate failures, and prevent system-wide downtime." />
+  <link rel="stylesheet" href="apipulse.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========== Navigation ========== -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-back" id="nav-back">
+          <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Portfolio
+        </a>
+        <span class="nav-title">Case Study</span>
+      </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/HeroImages/apipulse-hero.svg" alt="Abstract API monitoring and pulse visualization" />
+      </div>
+      <div class="container">
+        <div class="hero-label reveal">Case Study</div>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">API Pulse</span><br />
+          Real-Time Monitoring<br />& Failure Intelligence
+        </h1>
+        <p class="hero-pitch reveal">
+          Improved API reliability and reduced debugging effort by over 60% by building a real-time monitoring and failure intelligence dashboard for a BRMS-driven system.
+        </p>
+        <div class="hero-tags reveal">
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Google Apps Script</span>
+          <span class="tag">API Fetching</span>
+          <span class="tag">Microsoft Teams</span>
+          <span class="tag">Visual Analytics</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Overview ========== -->
+    <section class="overview" id="overview">
+      <div class="container">
+        <span class="section-label reveal">Overview</span>
+        <h2 class="section-heading reveal">Proactive System Intelligence</h2>
+        <p class="section-desc reveal">
+          API Pulse is a web-based monitoring and analytics platform designed to provide real-time visibility into critical API ecosystems across SIT, UAT, and Production environments. It was developed to proactively detect performance bottlenecks, isolate failures, and prevent system-wide downtime in a complex BRMS-driven architecture.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== Challenge ========== -->
+    <section class="challenge" id="challenge">
+      <div class="container">
+        <span class="section-label reveal">The Challenge</span>
+        <h2 class="section-heading reveal">Intermittent Failures, Blind Debugging</h2>
+        <p class="section-desc reveal">
+          The client's system heavily depended on a central BRMS API ("Expose") integrated with 8 downstream APIs. Intermittent slowdowns and timeouts in these dependent APIs were causing cascading issues that traditional debugging couldn't isolate due to non-uniform failure patterns.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="pain-points reveal-stagger">
+            <div class="pain-point reveal">
+              <div class="pain-icon">🛑</div>
+              <div class="pain-text">
+                <h4>System Failures</h4>
+                <p>Complete system failures caused by unidentified downstream bottlenecks in the BRMS architecture.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">⏳</div>
+              <div class="pain-text">
+                <h4>Delayed Identification</h4>
+                <p>Lack of real-time visibility meant issues were only identified after users reported them.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">🧩</div>
+              <div class="pain-text">
+                <h4>High Debugging Effort</h4>
+                <p>Debugging involved multiple teams sifting through raw logs, wasting hours of engineering bandwidth.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">📉</div>
+              <div class="pain-text">
+                <h4>UAT Productivity Loss</h4>
+                <p>Repeated downtime during critical User Acceptance Testing (UAT) phases severely hampered project timelines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Solution ========== -->
+    <section class="solution" id="solution">
+      <div class="container">
+        <span class="section-label reveal">Key Features</span>
+        <h2 class="section-heading reveal">Data-Driven Visual Debugging</h2>
+        <p class="section-desc reveal">
+          I designed and developed a real-time monitoring dashboard that transformed raw API logs into actionable insights. By capturing API response data in real-time (via GAS + Google Sheets), the system mapped API responses to BRMS rule execution logs to correlate performance with rule complexity.
+        </p>
+
+        <div class="solution-cards reveal-stagger">
+          <div class="solution-card reveal">
+            <div class="solution-card-number">01</div>
+            <div class="solution-card-icon">📊</div>
+            <h3>Live API Dashboard</h3>
+            <p>Visual tracking of all 8 dependent APIs plus the master “Expose” API in a centralized view.</p>
+            <ul>
+              <li>Unified view of the API ecosystem</li>
+              <li>Real-time status indicators</li>
+              <li>Load distribution analysis</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">02</div>
+            <div class="solution-card-icon">⚡</div>
+            <h3>Performance Analytics</h3>
+            <p>Calculates real-time and 24-hour average response times to benchmark normal operations.</p>
+            <ul>
+              <li>Live response time tracking</li>
+              <li>24-hour historical averages</li>
+              <li>Latency spike detection</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">03</div>
+            <div class="solution-card-icon">🔍</div>
+            <h3>Root Cause Detection</h3>
+            <p>Uses visual pattern analysis to identify conflicting parameters and rule-level inefficiencies.</p>
+            <ul>
+              <li>Correlation with BRMS execution logs</li>
+              <li>Parameter conflict isolation</li>
+              <li>Inefficient rule highlighting</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">04</div>
+            <div class="solution-card-icon">🚨</div>
+            <h3>Instant Failure Alerts</h3>
+            <p>Automated notifications when system downtime or critical latency thresholds are detected.</p>
+            <ul>
+              <li>Microsoft Teams webhook integration</li>
+              <li>Automated email alerts</li>
+              <li>Proactive rather than reactive</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">05</div>
+            <div class="solution-card-icon">🕒</div>
+            <h3>24-Hour Log Retention</h3>
+            <p>Maintains historical performance tracking specifically optimized for trend analysis and debugging.</p>
+            <ul>
+              <li>Trend visualization over time</li>
+              <li>Pattern recognition across shifts</li>
+              <li>Lightweight data storage via Sheets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Impact ========== -->
+    <section class="impact" id="impact" style="position: relative; overflow: hidden;">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <span class="section-label reveal">Impact</span>
+        <h2 class="section-heading reveal">Quantified Results</h2>
+        <p class="section-desc reveal">
+          API Pulse provided unprecedented visibility, allowing the team to move from reactive firefighting to proactive resolution.
+        </p>
+
+        <div class="impact-metrics reveal-stagger">
+          <div class="metric-card reveal">
+            <div class="metric-icon">🚀</div>
+            <div class="metric-value" data-target="65" data-prefix="~" data-suffix="%">~65%</div>
+            <div class="metric-label">Reduction in Diagnosis Time (from ~2-3 hrs to <45 mins)</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🎯</div>
+            <div class="metric-value" data-target="80" data-prefix="~" data-suffix="%">~80%</div>
+            <div class="metric-label">Of Timeout Issues Isolated to 2 Critical APIs</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">⏱️</div>
+            <div class="metric-value" data-target="40" data-prefix="~" data-suffix="%">~40%</div>
+            <div class="metric-label">Improvement in API Stability During UAT</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🔍</div>
+            <div class="metric-value" data-target="70" data-prefix="~" data-suffix="%">~70%</div>
+            <div class="metric-label">Faster Root Cause Identification via Log Correlation</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📉</div>
+            <div class="metric-value" data-target="50" data-prefix="~" data-suffix="%">~50%</div>
+            <div class="metric-label">Decrease in System Downtime Incidents</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🚨</div>
+            <div class="metric-value" data-target="5" data-prefix="< " data-suffix=" min">< 5 min</div>
+            <div class="metric-label">Incident Response Time via Automated Alerts</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🧠</div>
+            <div class="metric-value" data-target="60" data-prefix="~" data-suffix="%">~60%</div>
+            <div class="metric-label">Of Repetitive Manual Log Analysis Eliminated</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📊</div>
+            <div class="metric-value" data-target="9" data-suffix=" APIs">9 APIs</div>
+            <div class="metric-label">Real-Time Visibility (1 Master + 8 Dependent)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Highlight ========== -->
+    <section class="highlight-section" id="highlight">
+      <div class="container">
+        <div class="highlight-box reveal">
+          <h3>The Turning Point</h3>
+          <p>
+            "Transformed a complex, non-deterministic API failure scenario into a data-driven, visual debugging system, enabling faster root cause analysis and proactive monitoring."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tech Stack ========== -->
+    <section class="tech-stack" id="tech-stack">
+      <div class="container">
+        <span class="section-label reveal">Technology Stack</span>
+        <h2 class="section-heading reveal">Built With</h2>
+
+        <div class="stack-grid reveal-stagger">
+          <div class="stack-item reveal">
+            <div class="stack-icon">💻</div>
+            <div class="stack-info">
+              <h4>Frontend</h4>
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🗄️</div>
+            <div class="stack-info">
+              <h4>Data Layer</h4>
+              <p>Google Sheets</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">⚙️</div>
+            <div class="stack-info">
+              <h4>Automation</h4>
+              <p>Google Apps Script</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🔗</div>
+            <div class="stack-info">
+              <h4>Integrations</h4>
+              <p>API Fetching, MS Teams Alerts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-divider"></div>
+                <div class="footer-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+          <a href="preapi-validation.html" class="footer-back" style="margin-bottom: 0;">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Previous
+          </a>
+          <a href="../index.html" class="footer-back" style="margin-bottom: 0; opacity: 0.7; font-size: 14px;">
+            Portfolio
+          </a>
+          <a href="flagsight.html" class="footer-back" style="margin-bottom: 0; flex-direction: row-reverse;">
+            <svg viewBox="0 0 24 24" style="margin-right: 0; margin-left: 12px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Next
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Aditya — API Pulse Case Study</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="apipulse.js"></script>
+<script src="../global-cursor.js"></script>
+</body>
+</html>
