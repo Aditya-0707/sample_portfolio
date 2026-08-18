@@ -1,0 +1,879 @@
+/* ============================================
+   ADITYA'S PORTFOLIO v4 — IMMERSIVE 3D THEME
+   Design System: Spatial UI + OLED Dark + Three.js
+   Typography: Archivo (headings) / Space Grotesk (body)
+   ============================================ */
+
+/* --- Design Tokens --- */
+:root {
+    --color-bg: #050505;
+    --color-bg-elevated: #0a0a0f;
+    --color-surface: rgba(255, 255, 255, 0.03);
+    --color-text: rgba(255, 255, 255, 0.92);
+    --color-text-secondary: rgba(255, 255, 255, 0.7);
+    --color-text-muted: rgba(255, 255, 255, 0.45);
+    --color-accent: #00F0FF;
+    --color-accent-dim: rgba(0, 240, 255, 0.6);
+    --color-accent-glow: rgba(0, 240, 255, 0.12);
+    --color-border: rgba(255, 255, 255, 0.06);
+    --color-border-hover: rgba(255, 255, 255, 0.14);
+
+    --glass-bg: rgba(255, 255, 255, 0.035);
+    --glass-bg-hover: rgba(255, 255, 255, 0.065);
+    --glass-blur: 20px;
+    --glass-saturate: 180%;
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+    --perspective: 1000px;
+    --tilt-max: 8deg;
+    --card-radius: 16px;
+    --panel-radius: 20px;
+
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 48px;
+    --spacing-xl: 80px;
+    --spacing-2xl: 120px;
+
+    --font-heading: 'Archivo', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-body: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+    --transition-fast: 150ms;
+    --transition-normal: 300ms;
+    --transition-slow: 500ms;
+}
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color var(--transition-fast) ease,
+        text-shadow var(--transition-fast) ease;
+}
+
+a:hover {
+    text-shadow: 0 0 8px var(--color-accent-glow);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- Three.js Background Canvas --- */
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* --- Main Content Layer --- */
+.page-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   GLASS PANEL — Universal Component
+   ============================================ */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--glass-shadow);
+    transition: background var(--transition-normal) ease,
+        border-color var(--transition-normal) ease,
+        box-shadow var(--transition-normal) ease,
+        transform var(--transition-normal) ease;
+}
+
+.glass-panel:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--color-border-hover);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* ============================================
+   HERO SECTION — Full-Viewport Cinematic
+   ============================================ */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    position: relative;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(48px, 8vw, 100px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.05;
+    background: linear-gradient(160deg,
+            rgba(255, 255, 255, 0.95) 30%,
+            var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: clamp(15px, 2vw, 18px);
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    max-width: 520px;
+    line-height: 1.6;
+}
+
+/* Profile Card — 3D Glass Panel */
+.profile-card {
+    display: flex;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    border-radius: var(--panel-radius);
+    max-width: 1100px;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.profile-avatar {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-border);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    flex: 1;
+}
+
+.profile-greeting {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.profile-bio {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--color-text-secondary);
+}
+
+/* Profile Details Toggle */
+.profile-details {
+    margin-top: 4px;
+}
+
+.profile-details summary {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-accent);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    transition: color var(--transition-fast) ease;
+}
+
+.profile-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.profile-details summary::before {
+    content: '▶';
+    font-size: 9px;
+    color: var(--color-accent-dim);
+    transition: transform 0.2s ease;
+    display: inline-block;
+    width: 14px;
+    text-align: center;
+}
+
+.profile-details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.profile-details summary:hover {
+    color: var(--color-text);
+}
+
+.profile-bullet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+.profile-bullet-list li {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--color-text-secondary);
+}
+
+.profile-bullet-list li strong {
+    color: var(--color-text);
+}
+
+/* Contact Bar — Glass Strip */
+.contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    max-width: 1100px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.contact-item {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-secondary);
+}
+
+.contact-item svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.contact-item strong {
+    color: var(--color-text);
+}
+
+.contact-item a {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   SECTIONS — Shared Structure
+   ============================================ */
+.section-wrapper {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-divider {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--color-border) 30%, var(--color-border) 70%, transparent 100%);
+    border: none;
+    display: block;
+}
+
+/* Section Header — Left/Right Split */
+.section-header {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.section-title-block {
+    flex: 1;
+    min-width: 260px;
+}
+
+.section-cards-block {
+    flex: 2;
+    min-width: 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(26px, 3.5vw, 38px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.section-summary {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+.section-stats {
+    font-size: 13px;
+    line-height: 2;
+    color: var(--color-text-muted);
+}
+
+.section-stats .stat-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.section-stats .stat-line svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    color: var(--color-accent-dim);
+}
+
+/* ============================================
+   3D CARDS GRID — Cinematic Fade & Depth
+   ============================================ */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--spacing-md);
+    perspective: 1200px;
+}
+
+.cards-grid-3col {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cards-grid-2col {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card-3d {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: rotateX(calc(var(--tilt-x, 0) * 1deg)) rotateY(calc(var(--tilt-y, 0) * 1deg));
+    will-change: transform;
+    background: #050505;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    transition: box-shadow var(--transition-normal) ease, border-color var(--transition-normal) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-3d:hover {
+    transform: rotateX(calc(var(--tilt-x, 0) * 1deg)) rotateY(calc(var(--tilt-y, 0) * 1deg)) translateZ(30px);
+    border-color: rgba(0, 240, 255, 0.4);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(0, 240, 255, 0.15);
+}
+
+.card-image-wrapper {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+/* Cinematic fade-to-black mask */
+.card-image-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: -1px; /* prevents edge bleeding */
+    background: linear-gradient(to bottom, rgba(5,5,5,0) 30%, rgba(5,5,5,0.85) 75%, rgba(5,5,5,1) 100%);
+    pointer-events: none;
+    transform: translateZ(1px); /* Keep mask above image */
+}
+
+.card-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform var(--transition-slow) ease;
+    filter: brightness(0.95);
+}
+
+.card-3d:hover .card-image {
+    transform: scale(1.08);
+}
+
+.card-content {
+    padding: 0 24px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transform: translateZ(40px); /* Float high above the card */
+    margin-top: -60px; /* Pull text up over the faded image */
+    position: relative;
+    z-index: 2;
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.9);
+}
+
+.card-domain {
+    font-size: 10px;
+    font-weight: 700;
+    color: #050505;
+    background: var(--color-accent);
+    padding: 6px 14px;
+    border-radius: 20px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    box-shadow: 0 4px 16px rgba(0, 240, 255, 0.4);
+    transition: transform var(--transition-fast) ease;
+}
+
+.card-3d:hover .card-domain {
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   TIMELINE — Floating Glass Nodes
+   ============================================ */
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding-left: 44px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    bottom: 12px;
+    width: 1px;
+    background: linear-gradient(180deg,
+            var(--color-accent) 0%,
+            var(--color-border) 70%,
+            transparent 100%);
+}
+
+.timeline-entry {
+    position: relative;
+    padding: var(--spacing-md) var(--spacing-md);
+    border-radius: 14px;
+    transform-style: preserve-3d;
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    box-shadow: 0 0 12px var(--color-accent-glow),
+        0 0 4px var(--color-accent);
+    border: 2px solid var(--color-bg);
+    z-index: 1;
+    transition: box-shadow var(--transition-normal) ease;
+}
+
+.timeline-entry:hover::before {
+    box-shadow: 0 0 24px rgba(0, 240, 255, 0.4),
+        0 0 8px var(--color-accent);
+}
+
+.entry-title {
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.entry-subtitle {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.entry-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* ============================================
+   SKILLS — Tab Constellation
+   ============================================ */
+.tabs-wrapper {
+    margin-bottom: var(--spacing-md);
+}
+
+.tab-bar {
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 12px;
+    margin-bottom: var(--spacing-md);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-body);
+    border-radius: 8px;
+    transition: all var(--transition-normal) ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tab-btn:hover {
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.tab-btn.active {
+    color: var(--color-accent);
+    background: rgba(0, 240, 255, 0.07);
+    box-shadow: inset 0 0 0 1px rgba(0, 240, 255, 0.18);
+}
+
+.tab-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: default;
+    color: var(--color-text-secondary);
+    transition: all var(--transition-normal) ease;
+    transform: translateZ(0);
+}
+
+.skill-badge:hover {
+    color: var(--color-text);
+    background: var(--glass-bg-hover);
+    border-color: rgba(0, 240, 255, 0.15);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3),
+        0 0 16px var(--color-accent-glow);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.skill-badge svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color-accent-dim);
+    flex-shrink: 0;
+}
+
+/* ============================================
+   FOOTER — Frosted Glass Panel
+   ============================================ */
+.footer-section {
+    max-width: 1300px;
+    margin: 0 auto var(--spacing-xl);
+    padding: var(--spacing-lg);
+    border-radius: var(--panel-radius);
+}
+
+.footer-section .section-title {
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-md);
+    border-left: 2px solid var(--color-accent);
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--color-text-secondary);
+}
+
+.footer-link svg {
+    width: 18px;
+    height: 18px;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.footer-link a {
+    color: var(--color-accent);
+}
+
+.footer-note {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-md);
+}
+
+/* ============================================
+   SCROLL-DOWN INDICATOR
+   ============================================ */
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-muted);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    animation: scrollBounce 2s ease-in-out infinite;
+}
+
+.scroll-indicator svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-accent-dim);
+}
+
+@keyframes scrollBounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+@media (max-width: 1024px) {
+    .section-header {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-avatar {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profile-bullet-list {
+        text-align: left;
+    }
+
+    .cards-grid-3col {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .section-wrapper {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .contact-bar {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: center;
+    }
+
+    .profile-card {
+        padding: var(--spacing-md);
+    }
+
+    .timeline {
+        padding-left: 32px;
+    }
+
+    .timeline::before {
+        left: 11px;
+    }
+
+    .timeline-entry::before {
+        left: -28px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .footer-section {
+        margin-left: var(--spacing-md);
+        margin-right: var(--spacing-md);
+    }
+
+    .tab-bar {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .section-wrapper {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .profile-card {
+        padding: var(--spacing-sm);
+        gap: var(--spacing-md);
+    }
+
+    .profile-avatar {
+        width: 160px;
+        height: 160px;
+    }
+
+    .cards-grid,
+    .cards-grid-3col,
+    .cards-grid-2col {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-bar {
+        padding: var(--spacing-sm);
+        gap: 12px;
+    }
+
+    .footer-section {
+        padding: var(--spacing-md);
+        margin-left: var(--spacing-sm);
+        margin-right: var(--spacing-sm);
+    }
+}
+
+/* ============================================
+   REDUCED MOTION — Accessibility
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .card-3d,
+    .card-3d:hover {
+        transform: none !important;
+        will-change: auto !important;
+    }
+
+    .card-3d:hover .card-image {
+        transform: none !important;
+    }
+
+    .skill-badge:hover {
+        transform: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .scroll-indicator {
+        animation: none;
+    }
+}

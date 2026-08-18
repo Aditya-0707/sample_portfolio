@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pawar - Portfolio</title>
+
+    <!-- Fonts: Archivo (headings) + Space Grotesk (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Three.js Particle Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Main Content -->
+    <div class="page-content">
+
+        <!-- ============================================
+             HERO SECTION — Full-Viewport Cinematic
+             ============================================ -->
+        <section class="hero-section">
+
+            <h1 class="hero-title">Aditya's Portfolio</h1>
+            <p class="hero-subtitle">Business Analyst · Problem Solver · Builder</p>
+
+            <!-- Profile Card — Floating Glass Panel -->
+            <div class="profile-card glass-panel" data-tilt>
+                <img src="../Projects Pages/assets/HeroImages/ProfileImage.svg" alt="Aditya Pawar"
+                    class="profile-avatar">
+
+                <div class="profile-info">
+                    <p class="profile-greeting">Hi, I'm Aditya Pawar,</p>
+                    <p class="profile-bio">A results driven Business Analyst with 2+ years of full-time experience
+                        delivering technology-driven solutions across BFSI domain especially Insurance and underwriting
+                        systems, with hands-on involvement in UAT, SIT, go-live, and regulatory compliance initiatives.
+                        Known for driving clarity between business and technology to ensure on-time, high-quality
+                        delivery.</p>
+
+                    <details class="profile-details" open>
+                        <summary>Read More</summary>
+                        <ul class="profile-bullet-list">
+                            <li><strong>Execution &amp; Ownership:</strong> High-ownership, detail-oriented professional
+                                who collaborates effectively with stakeholders, cross-functional engto ensure
+                                requirement clarity, solution alignment, and smooth go-live execution.</li>
+                            <li><strong>Domain &amp; Technical Expertise:</strong> Strong expertise in BRMS
+                                configuration, process mapping, workflow analysis, change management, JIRA tracking,
+                                and API-integrated rule automation, delivering 40% reduction in manual effort, 35%
+                                operational efficiency gains, and 25-30% performance improvements across
+                                business-critical systems.</li>
+                            <li><strong>Innovation &amp; Impact:</strong> Designed and implemented AI-enabled debugging
+                                and troubleshooting tools using strong technical knowledge, reducing issue analysis
+                                and resolution time by up to 99%, accelerating delivery cycles, and improving
+                                overall system reliability while maintaining 100% regulatory compliance.</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Contact Bar — Glass Strip -->
+            <div class="contact-bar glass-panel">
+                <span class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <strong>Location:</strong> Noida, India
+                </span>
+                <span class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <strong>Phone:</strong> +91-9111971106
+                </span>
+                <span class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                        </path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <strong>Email:</strong> <a
+                        href="mailto:adityapawar1002@gmail.com">adityapawar1002@gmail.com</a>
+                </span>
+                <span class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aditya-pawar-b94b47212/"
+                        target="_blank">www.linkedin.com</a>
+                </span>
+            </div>
+
+            <!-- Scroll-Down Indicator -->
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+
+        </section>
+
+        <!-- ============================================
+             CASE STUDIES
+             ============================================ -->
+        <hr class="section-divider">
+
+        <section class="section-wrapper">
+            <div class="section-header">
+                <div class="section-title-block">
+                    <h2 class="section-title">Case Studies</h2>
+                    <p class="section-summary">These case studies walk through real production challenges I tackled —
+                        from decoding complex insurance APIs to automating document-to-database pipelines.</p>
+                    <div class="section-stats">
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                            Debugging time cut from hours → minutes
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                            Up to 99% reduction in manual effort
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                            24/7 automated system health monitoring
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                            Real-time JIRA classification &amp; routing
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-cards-block">
+                    <div class="cards-grid">
+                        <a href="../Projects Pages/calcinsight.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/CoverImages/CalcInsight_Cover.svg" alt="CalcInsight"
+                                    class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">CalcInsight</span>
+                                <span class="card-domain">Domain: API Observability</span>
+                            </div>
+                        </a>
+                        <a href="../Projects Pages/doc2db.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/CoverImages/Doc2DB.svg" alt="Doc2DB Pipeline"
+                                    class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Doc2DB Pipeline</span>
+                                <span class="card-domain">Domain: Automation</span>
+                            </div>
+                        </a>
+                        <a href="../Projects Pages/ticketsense.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/CoverImages/ticketsense_Cover.svg" alt="TicketSense"
+                                    class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">TicketSense</span>
+                                <span class="card-domain">Domain: Workflow Automation</span>
+                            </div>
+                        </a>
+                        <a href="../Projects Pages/pulseguard.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/CoverImages/PulseGuard.svg" alt="PulseGuard"
+                                    class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">PulseGuard</span>
+                                <span class="card-domain">Domain: Monitoring</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FEATURED PROJECTS
+             ============================================ -->
+        <hr class="section-divider">
+
+        <section class="section-wrapper">
+            <div class="section-header">
+                <div class="section-title-block">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-summary">Purpose-built tools I designed to solve live production pain points —
+                        proactive monitoring, automated flag validation, and pre-API error detection.</p>
+                    <div class="section-stats">
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                            Real-time visibility across 9+ APIs
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                            95% reduction in manual validation effort
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                            </svg>
+                            60–80% fewer unnecessary API calls
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            Failure diagnosis time cut by ~65%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-cards-block">
+                    <div class="cards-grid cards-grid-3col">
+                        <a href="../Projects Pages/apipulse.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/CoverImages/APIPulse_Cover.svg" alt="API Pulse"
+                                    class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">API Pulse - Real-Time Monitoring &amp; Failure Intelligence
+                                    System</span>
+                                <span class="card-domain">Domain: Data Validation Systems</span>
+                            </div>
+                        </a>
+                        <a href="../Projects Pages/flagsight.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/CoverImages/FlagSight.svg" alt="FlagSight"
+                                    class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">FlagSight - Automated API Flag Validation &amp; Audit
+                                    Engine</span>
+                                <span class="card-domain">Domain: Feature Flag Management</span>
+                            </div>
+                        </a>
+                        <a href="../Projects Pages/preapi-validation.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/CoverImages/PreAPI_Cover.svg"
+                                    alt="Pre-API Validation Engine" class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Pre-API Validation Engine</span>
+                                <span class="card-domain">Domain: Security &amp; Compliance</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PROFESSIONAL EXPERIENCE — Glass Timeline
+             ============================================ -->
+        <hr class="section-divider">
+
+        <section class="section-wrapper">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="timeline">
+                <div class="timeline-entry glass-panel" data-tilt>
+                    <div class="entry-title">Associate Business Analyst | Newgen Software Technologies Limited, Noida
+                    </div>
+                    <div class="entry-subtitle">July 2024 - Present</div>
+                </div>
+
+                <div class="timeline-entry glass-panel" data-tilt>
+                    <div class="entry-title">Application Engineer Trainee | Newgen Software Technologies Limited, Noida
+                    </div>
+                    <div class="entry-subtitle">January 2024 - July 2024</div>
+                </div>
+
+                <div class="timeline-entry glass-panel" data-tilt>
+                    <div class="entry-title">Business Development Executive | Emotech Software Solutions Pvt. Ltd,
+                        Gwalior</div>
+                    <div class="entry-subtitle">January 2023 - January 2024 (Part Time)</div>
+                </div>
+
+                <div class="timeline-entry glass-panel" data-tilt>
+                    <div class="entry-title">Content Developer Intern | Doubtnut-Class 21a Technologies Private Limited
+                    </div>
+                    <div class="entry-subtitle">August 2021 - October 2021</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             ACADEMIC HISTORY — Glass Timeline
+             ============================================ -->
+        <hr class="section-divider">
+
+        <section class="section-wrapper">
+            <h2 class="section-title">Academic History</h2>
+
+            <div class="timeline">
+                <div class="timeline-entry glass-panel" data-tilt>
+                    <div class="entry-title">Bachelor of Technology</div>
+                    <div class="entry-subtitle">Automobile Engineering | Madhav Institute of Technology and Science,
+                        Gwalior</div>
+                    <div class="entry-details">CGPA: 7.6/10 | July 2020 - July 2024</div>
+                </div>
+
+                <div class="timeline-entry glass-panel" data-tilt>
+                    <div class="entry-title">Secondary Education</div>
+                    <div class="entry-subtitle">St. Joseph's Senior Secondary School, Pipariya, M.P.</div>
+                    <div class="entry-details">
+                        <p>Class XII (PCM), CBSE | 2020 | 80%</p>
+                        <p style="margin-top: 6px;">Class X, CBSE | 2018 | 80%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SKILLS & TOOLS — Tab Constellation
+             ============================================ -->
+        <hr class="section-divider">
+
+        <section class="section-wrapper">
+            <h2 class="section-title">Skills &amp; Tools</h2>
+
+            <div class="tabs-wrapper">
+                <div class="tab-bar glass-panel">
+                    <button class="tab-btn active" data-tab="core-skills">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                        </svg>
+                        Core Skills
+                    </button>
+                    <button class="tab-btn" data-tab="tools-tech">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        Tools &amp; Technologies
+                    </button>
+                </div>
+
+                <!-- Core Skills Tab -->
+                <div class="tab-content active" id="core-skills">
+                    <div class="skills-grid">
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Business Analysis
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                            Documentation
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            System Integration
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z">
+                                </path>
+                                <path
+                                    d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z">
+                                </path>
+                            </svg>
+                            Project Management
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                            Data &amp; Analytics
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                            Power BI
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                            MS Excel
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                            SQL
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            Postman
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                            MS Visio
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            User Stories
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            Gap Analysis
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies Tab -->
+                <div class="tab-content" id="tools-tech">
+                    <div class="skills-grid">
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                </path>
+                            </svg>
+                            JIRA
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                            Notion
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                            Lucidchart
+                        </div>
+                        <div class="skill-badge glass-panel">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                            Salesforce Platform
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CERTIFICATIONS & ACHIEVEMENTS
+             ============================================ -->
+        <hr class="section-divider">
+
+        <section class="section-wrapper">
+            <h2 class="section-title">Certifications &amp; Achievements</h2>
+
+            <div class="cards-grid">
+                <a href="../Certificates/NewgenHighFive.jpg" target="_blank" class="card-3d glass-panel" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="../Certificates/NewgenHighFive_Cover.jpg" alt="Newgen High-Five Award"
+                            class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Newgen High-Five Award</span>
+                    </div>
+                </a>
+                <a href="../Certificates/java udemy.pdf" target="_blank" class="card-3d glass-panel" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="../Certificates/java udemy_Cover.jpg" alt="The Complete Java Development"
+                            class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">The Complete Java Development</span>
+                    </div>
+                </a>
+                <a href="../Certificates/Sql udem.pdf" target="_blank" class="card-3d glass-panel" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="../Certificates/Sql udem_Cover.jpg" alt="SQL for beginners" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">SQL for beginners</span>
+                    </div>
+                </a>
+                <a href="../Certificates/python.jpeg" target="_blank" class="card-3d glass-panel" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="../Certificates/python.jpeg" alt="Diploma Course in Python" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Diploma Course in Python</span>
+                    </div>
+                </a>
+                <a href="../Certificates/Shankhnaad CAP.pdf" target="_blank" class="card-3d glass-panel" data-tilt>
+                    <div class="card-image-wrapper">
+                        <img src="../Certificates/Shankhnaad CAP_Cover.jpg" alt="Campus Ambassador" class="card-image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Campus Ambassador</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================================
+             ENGINEERING & 3D DESIGN
+             ============================================ -->
+        <hr class="section-divider">
+
+        <section class="section-wrapper">
+            <div class="section-header">
+                <div class="section-title-block">
+                    <h2 class="section-title">Engineering and 3D Design</h2>
+                    <p class="section-summary">With a B.Tech in Automobile Engineering, 3D modelling, simulation, and
+                        rendering weren't just coursework — they were a deep dive into how things are built, tested, and
+                        visualized.</p>
+                    <div class="section-stats">
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                </path>
+                            </svg>
+                            CAD modelling &amp; mechanical assemblies
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                            Photorealistic rendering &amp; visualization
+                        </div>
+                        <div class="stat-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                            Stress analysis &amp; simulation workflows
+                        </div>
+                    </div>
+                    <p class="section-summary" style="font-style: italic; margin-top: 12px;">What started as an
+                        engineering necessity turned into a creative hobby — one I still pursue alongside my analytics
+                        career.</p>
+                </div>
+
+                <div class="section-cards-block">
+                    <div class="cards-grid cards-grid-2col">
+                        <a href="../Projects Pages/3d-modelling.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/HeroImages/Modelling.svg" alt="3D Modelling"
+                                    class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">3D Modelling</span>
+                            </div>
+                        </a>
+                        <a href="../Projects Pages/simulation.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/HeroImages/Simulation.svg"
+                                    alt="Simulation and Analysis" class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Simulation and Analysis</span>
+                            </div>
+                        </a>
+                        <a href="../Projects Pages/rendering.html" class="card-3d glass-panel" data-tilt>
+                            <div class="card-image-wrapper">
+                                <img src="../Projects Pages/assets/HeroImages/Rendering.svg"
+                                    alt="Rendering & Visualization" class="card-image">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">Rendering &amp; Visualization</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FOOTER — Frosted Glass Panel
+             ============================================ -->
+        <footer class="footer-section glass-panel">
+            <h2 class="section-title">Wrapping Things Up</h2>
+
+            <p class="footer-text">Thank you for taking the time to explore my portfolio. Whether it's refining business
+                processes, designing better systems, or bringing clarity to complexity, I'm passionate about using
+                analysis to create impact.</p>
+            <p class="footer-text">If you'd like to connect, collaborate, or discuss how BA practices can transform
+                ideas into value, feel free to reach out!</p>
+
+            <div class="footer-links">
+                <div class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                        </path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span><strong>Reach out:</strong> <a
+                            href="mailto:adityapawar1002@gmail.com">adityapawar1002@gmail.com</a></span>
+                </div>
+                <div class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span><strong>Connect on LinkedIn:</strong> <a
+                            href="https://www.linkedin.com/in/aditya-pawar-b94b47212/"
+                            target="_blank">www.linkedin.com</a></span>
+                </div>
+                <div class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48">
+                        </path>
+                    </svg>
+                    <span><strong>View my resume:</strong> <a
+                            href="https://drive.google.com/drive/folders/1LVRGQH895Tv9kURvZ2pmlfb_qJI8-uvn?usp=sharing"
+                            target="_blank">Resume</a></span>
+                </div>
+            </div>
+
+            <p class="footer-note">Thanks again for stopping by 😉</p>
+        </footer>
+
+    </div>
+    <!-- /.page-content -->
+
+    <!-- CDN Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- App Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
