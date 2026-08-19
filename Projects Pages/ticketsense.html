@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TicketSense — Automated JIRA Classification & Assignment Engine</title>
+  <meta name="description" content="TicketSense: An intelligent automation system that eliminates manual JIRA ticket triaging, reducing assignment time from 2-5 minutes to under 5 seconds with real-time classification and routing." />
+  <link rel="stylesheet" href="ticketsense.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========== Navigation ========== -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav-inner">
+        <a href="../index.html" class="nav-back" id="nav-back">
+          <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Portfolio
+        </a>
+        <span class="nav-title">Case Study</span>
+      </div>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="assets/HeroImages/ticketsense-hero.svg" alt="Abstract ticket classification visualization" />
+      </div>
+      <div class="container">
+        <div class="hero-label reveal">Case Study</div>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">TicketSense</span><br />
+          Automated JIRA Classification<br />& Assignment Engine
+        </h1>
+        <p class="hero-pitch reveal">
+          From chaos to clarity — an intelligent automation system that instantly analyzes, categorizes, and routes every JIRA ticket to the right team member in real-time.
+        </p>
+        <div class="hero-tags reveal">
+          <span class="tag">Python</span>
+          <span class="tag">JIRA APIs</span>
+          <span class="tag">Microsoft Teams</span>
+          <span class="tag">Rule-Based Classification</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Real-Time Routing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Overview ========== -->
+    <section class="overview" id="overview">
+      <div class="container">
+        <span class="section-label reveal">Overview</span>
+        <h2 class="section-heading reveal">Intelligent Ticket Triaging at Scale</h2>
+        <p class="section-desc reveal">
+          TicketSense is an intelligent automation system designed to eliminate manual effort in ticket triaging and assignment within high-volume JIRA environments. It ensures that every incoming issue is instantly analyzed, categorized, and routed to the right team member in real-time — integrating seamlessly into existing workflows without requiring changes in how clients raise tickets.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== Challenge ========== -->
+    <section class="challenge" id="challenge">
+      <div class="container">
+        <span class="section-label reveal">The Challenge</span>
+        <h2 class="section-heading reveal">Manual Triaging, Missed SLAs</h2>
+        <p class="section-desc reveal">
+          In large-scale production environments, hundreds of JIRA tickets were created daily across multiple domains — Medical APIs, Non-Medical APIs, Integrations (DDU, IIB, AOL, NSDL), and Civil services. The manual triaging process couldn't keep up.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="pain-points reveal-stagger">
+            <div class="pain-point reveal">
+              <div class="pain-icon">📥</div>
+              <div class="pain-text">
+                <h4>Default PM Assignment</h4>
+                <p>All incoming tickets were initially assigned to project managers, creating a bottleneck before they could even reach the right person for resolution.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">⏱️</div>
+              <div class="pain-text">
+                <h4>Time-Consuming Triaging</h4>
+                <p>Manual classification and reassignment of tickets consumed significant time, delaying the start of actual resolution work across every domain.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">🔀</div>
+              <div class="pain-text">
+                <h4>Incorrect Routing</h4>
+                <p>Misassigned tickets bounced between teams, causing delays in resolution and frustration for both developers and stakeholders.</p>
+              </div>
+            </div>
+            <div class="pain-point reveal">
+              <div class="pain-icon">👁️</div>
+              <div class="pain-text">
+                <h4>No Real-Time Visibility</h4>
+                <p>Lack of instant awareness about new tickets and their status slowed down response times and made workload planning reactive instead of proactive.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-callout reveal">
+            <div class="stat-callout-value">2–5 min</div>
+            <div class="stat-callout-label">Per Ticket Assignment Time</div>
+            <div class="stat-callout-sub">Manual triaging across hundreds of daily tickets</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Solution ========== -->
+    <section class="solution" id="solution">
+      <div class="container">
+        <span class="section-label reveal">Key Features</span>
+        <h2 class="section-heading reveal">Intelligent Classification & Routing</h2>
+        <p class="section-desc reveal">
+          A backend-driven automation bot that parses, classifies, and routes tickets in real-time — eliminating manual triaging entirely while keeping teams instantly informed.
+        </p>
+
+        <div class="solution-cards reveal-stagger">
+          <div class="solution-card reveal">
+            <div class="solution-card-number">01</div>
+            <div class="solution-card-icon">🧠</div>
+            <h3>Smart Classification Engine</h3>
+            <p>Uses keyword-based parsing to accurately detect API and domain categories from ticket descriptions.</p>
+            <ul>
+              <li>Medical & Non-Medical API detection</li>
+              <li>Integration domain parsing (DDU, IIB, AOL, NSDL)</li>
+              <li>Civil services category identification</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">02</div>
+            <div class="solution-card-icon">⚡</div>
+            <h3>Instant Auto Assignment</h3>
+            <p>Maps each classified category to predefined team members and automatically reassigns tickets to the correct owner.</p>
+            <ul>
+              <li>Category-to-owner mapping rules</li>
+              <li>Ticket routing within seconds</li>
+              <li>Zero manual intervention required</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">03</div>
+            <div class="solution-card-icon">📢</div>
+            <h3>Real-Time Notifications</h3>
+            <p>Sends updates directly to Microsoft Teams channels — no email delays, instant awareness for the entire team.</p>
+            <ul>
+              <li>Webhook-based instant alerts</li>
+              <li>Channel-specific routing</li>
+              <li>Assignment confirmation messages</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">04</div>
+            <div class="solution-card-icon">🔄</div>
+            <h3>Seamless Integration</h3>
+            <p>Works on top of existing JIRA workflows without disrupting how clients raise tickets or how teams operate.</p>
+            <ul>
+              <li>No workflow changes required</li>
+              <li>Transparent to ticket creators</li>
+              <li>Compatible with existing JIRA configurations</li>
+            </ul>
+          </div>
+          <div class="solution-card reveal">
+            <div class="solution-card-number">05</div>
+            <div class="solution-card-icon">📊</div>
+            <h3>Scalable Architecture</h3>
+            <p>Handles high volumes of production and QA tickets efficiently, scaling with team and project growth.</p>
+            <ul>
+              <li>Designed for hundreds of daily tickets</li>
+              <li>Multi-domain support</li>
+              <li>Reliable under peak load</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== How It Works ========== -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">The Routing Pipeline</h2>
+        <p class="section-desc reveal">
+          From ticket creation to team notification — the entire classification and assignment cycle happens automatically in seconds.
+        </p>
+
+        <div class="flow-steps reveal-stagger">
+          <div class="flow-step reveal">
+            <div class="flow-step-number">01</div>
+            <div class="flow-step-content">
+              <h4>Ticket Created in JIRA</h4>
+              <p>A client or QA team member creates a new ticket in JIRA. It is initially assigned to the project manager by default — the standard incoming state.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">02</div>
+            <div class="flow-step-content">
+              <h4>Real-Time Description Parsing</h4>
+              <p>TicketSense monitors JIRA in real-time via APIs and immediately parses the ticket description to extract domain-specific keywords and context.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">03</div>
+            <div class="flow-step-content">
+              <h4>Category Classification</h4>
+              <p>The smart classification engine identifies the ticket's domain — Medical, Non-Medical, DDU, IIB, AOL, NSDL, Civil, or other categories — using rule-based keyword matching.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">04</div>
+            <div class="flow-step-content">
+              <h4>Auto-Assignment to Owner</h4>
+              <p>The classified category is mapped to the predefined team member, and the ticket is automatically reassigned to the correct owner via JIRA APIs.</p>
+            </div>
+          </div>
+          <div class="flow-step reveal">
+            <div class="flow-step-number">05</div>
+            <div class="flow-step-content">
+              <h4>Teams Notification Sent</h4>
+              <p>An instant notification is sent to the relevant Microsoft Teams channel with ticket details, classification, and assignment — giving the team real-time visibility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Impact ========== -->
+    <section class="impact" id="impact" style="position: relative; overflow: hidden;">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <span class="section-label reveal">Impact</span>
+        <h2 class="section-heading reveal">Measurable Results</h2>
+        <p class="section-desc reveal">
+          TicketSense transformed a chaotic, manual triaging process into an intelligent, instant, and reliable routing system.
+        </p>
+
+        <div class="impact-metrics reveal-stagger">
+          <div class="metric-card reveal">
+            <div class="metric-icon">⏱️</div>
+            <div class="metric-value" data-target="5" data-prefix="< " data-suffix=" sec">< 5 sec</div>
+            <div class="metric-label">Ticket Assignment Time (from 2–5 min)</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">🚀</div>
+            <div class="metric-value" data-target="70" data-prefix="~" data-suffix="%">~60–70%</div>
+            <div class="metric-label">Improvement in Response Time</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">❌</div>
+            <div class="metric-value">Eliminated</div>
+            <div class="metric-label">Misrouting Errors Significantly Reduced</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">👥</div>
+            <div class="metric-value">Balanced</div>
+            <div class="metric-label">Better Workload Distribution Across Teams</div>
+          </div>
+          <div class="metric-card reveal">
+            <div class="metric-icon">📡</div>
+            <div class="metric-value">Real-Time</div>
+            <div class="metric-label">Operational Visibility via Teams Notifications</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Tech Stack ========== -->
+    <section class="tech-stack" id="tech-stack">
+      <div class="container">
+        <span class="section-label reveal">Technology Stack</span>
+        <h2 class="section-heading reveal">Built With</h2>
+
+        <div class="stack-grid reveal-stagger">
+          <div class="stack-item reveal">
+            <div class="stack-icon">🐍</div>
+            <div class="stack-info">
+              <h4>Python</h4>
+              <p>Automation Logic</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🎫</div>
+            <div class="stack-info">
+              <h4>JIRA APIs</h4>
+              <p>Ticket Monitoring & Updates</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">💬</div>
+            <div class="stack-info">
+              <h4>Microsoft Teams Webhooks</h4>
+              <p>Real-Time Notifications</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">🧠</div>
+            <div class="stack-info">
+              <h4>Rule-Based Classification</h4>
+              <p>Keyword Parsing Engine</p>
+            </div>
+          </div>
+          <div class="stack-item reveal">
+            <div class="stack-icon">⚙️</div>
+            <div class="stack-info">
+              <h4>Backend Automation Scripts</h4>
+              <p>Workflow Orchestration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== My Role ========== -->
+    <section class="contributions" id="contributions">
+      <div class="container">
+        <span class="section-label reveal">My Role</span>
+        <h2 class="section-heading reveal">End-to-End Ownership</h2>
+
+        <ul class="contribution-list reveal-stagger">
+          <li class="contribution-item reveal">
+            <div class="contribution-marker"></div>
+            <p>Designed the classification logic for intelligent ticket parsing across multiple domains</p>
+          </li>
+          <li class="contribution-item reveal">
+            <div class="contribution-marker"></div>
+            <p>Built the complete automation workflow for real-time ticket assignment and routing</p>
+          </li>
+          <li class="contribution-item reveal">
+            <div class="contribution-marker"></div>
+            <p>Integrated JIRA APIs with Microsoft Teams notification systems for instant team alerts</p>
+          </li>
+          <li class="contribution-item reveal">
+            <div class="contribution-marker"></div>
+            <p>Optimized performance for high-volume ticket inflow across production and QA environments</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-divider"></div>
+                <div class="footer-navigation" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+          <a href="doc2db.html" class="footer-back" style="margin-bottom: 0;">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Previous
+          </a>
+          <a href="../index.html" class="footer-back" style="margin-bottom: 0; opacity: 0.7; font-size: 14px;">
+            Portfolio
+          </a>
+          <a href="pulseguard.html" class="footer-back" style="margin-bottom: 0; flex-direction: row-reverse;">
+            <svg viewBox="0 0 24 24" style="margin-right: 0; margin-left: 12px;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Next
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Aditya — TicketSense Case Study</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="ticketsense.js"></script>
+<script src="../global-cursor.js"></script>
+</body>
+</html>
